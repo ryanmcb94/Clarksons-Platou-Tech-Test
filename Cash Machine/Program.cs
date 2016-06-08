@@ -27,6 +27,7 @@ namespace Cash_Machine
             balance.Add((decimal)0.50, 100);
             balance.Add((decimal)0.20, 100);
             balance.Add((decimal)0.10, 100);
+            balance.Add((decimal)0.05 , 100);
             balance.Add((decimal)0.02, 100);
             balance.Add((decimal)0.01, 100);
         }
@@ -94,7 +95,8 @@ namespace Cash_Machine
         /// Alg2 - Max £20
         /// </summary>
         /// <param name="amount">Amount to be withdrawn</param>
-        public Dictionary<decimal, int> Algorithm2(decimal amount)
+        /// <param name="focus">The item to focus i.e 20</param>
+        public Dictionary<decimal, int> Algorithm2(decimal amount,decimal focus)
         {
             Dictionary<decimal, int> toGive = new Dictionary<decimal, int>();
             //Check if balance > amount
@@ -104,7 +106,7 @@ namespace Cash_Machine
             {
                 if (amount > 0) //£20 Notes
                 {
-                    int num = Convert.ToInt32(Math.Floor(amount / 20));
+                    int num = Convert.ToInt32(Math.Floor(amount / focus));
                     if (this.balance[20] > num && num > 0)
                     {
                         toGive.Add(20, num);

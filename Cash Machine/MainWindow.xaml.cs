@@ -40,7 +40,12 @@ namespace Cash_Machine
         {
             try
             {
+                if(Convert.ToDecimal(txtInput.Text) <0)
+                {
+                    throw new Exception();
+                }
                 this.displayWithdraw(this.pgm.Algorithm1(Convert.ToDecimal(txtInput.Text)));
+                this.displayBalance();
             }
             catch (Exception ex)
             {
@@ -56,7 +61,12 @@ namespace Cash_Machine
         {
             try
             {
-                this.displayWithdraw(this.pgm.Algorithm2(Convert.ToDecimal(txtInput.Text)));
+                if (Convert.ToDecimal(txtInput.Text) < 0)
+                {
+                    throw new Exception();
+                }
+                this.displayWithdraw(this.pgm.Algorithm2(Convert.ToDecimal(txtInput.Text),20));
+                this.displayBalance();
             }
             catch (Exception ex)
             {
@@ -96,7 +106,8 @@ namespace Cash_Machine
         /// </summary>
         private void displayBalance()
         {
-            string balance="Current Balance: \n";
+            string total = String.Format("{0:0.00}", this.pgm.getBalance());
+            string balance= String.Format("Total Balance: £{0} \n Items Remaning \n",total);
             foreach(decimal key in this.pgm.balance.Keys)
             {
                 if(this.pgm.balance[key] >0)
@@ -120,6 +131,8 @@ namespace Cash_Machine
         private void btnReset_Click(object sender, RoutedEventArgs e)
         {
             this.pgm.setup();
+            this.displayBalance();
+            this.txtReturned.Text = "";
         }
     }
 }

@@ -5,14 +5,14 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Cash_Machine"
         mc:Ignorable="d"
-        Title="MainWindow" Height="412.397" Width="667.009">
+        Title="Cash Machine" Height="412.397" Width="667.009">
     <Grid>
-        <Button x:Name="btnAlg2" Content="Highest Number of £20 (Algorithm 2)" HorizontalAlignment="Left" Margin="445,343,0,0" VerticalAlignment="Top" Width="204" Height="28" Click="btnAlg2_Click"/>
-        <Button x:Name="btnAlg1" Content="Last Number of IItems (Algorithm 1)" HorizontalAlignment="Left" Margin="10,343,0,0" VerticalAlignment="Top" Width="204" Height="28" Click="btnAlg1_Click"/>
+        <Button x:Name="btnAlg2" Content="Highest Number of £20 (Algorithm 2)" HorizontalAlignment="Left" Margin="425,38,0,0" VerticalAlignment="Top" Width="204" Height="28" Click="btnAlg2_Click"/>
+        <Button x:Name="btnAlg1" Content="Last Number of IItems (Algorithm 1)" HorizontalAlignment="Left" Margin="10,38,0,0" VerticalAlignment="Top" Width="204" Height="28" Click="btnAlg1_Click"/>
         <TextBlock x:Name="lblInput" HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" Text="Enter Withdrawal Amount:" VerticalAlignment="Top" Height="23" Width="285"/>
         <TextBox x:Name="txtInput" HorizontalAlignment="Left" Height="23" Margin="300,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="349"/>
-        <TextBlock x:Name="txtReturned" HorizontalAlignment="Left" Margin="10,38,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="300" Width="285"/>
-        <TextBlock x:Name="txtBalance" HorizontalAlignment="Left" Margin="300,43,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="295" Width="349"/>
-        <Button x:Name="btnReset" Content="Reset Balance" HorizontalAlignment="Left" Margin="265,343,0,0" VerticalAlignment="Top" Width="139" Height="28" Click="btnReset_Click"/>
+        <TextBlock x:Name="txtReturned" HorizontalAlignment="Left" Margin="10,71,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="300" Width="285"/>
+        <TextBlock x:Name="txtBalance" HorizontalAlignment="Left" Margin="300,76,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="295" Width="349"/>
+        <Button x:Name="btnReset" Content="Reset Balance" HorizontalAlignment="Left" Margin="236,38,0,0" VerticalAlignment="Top" Width="139" Height="28" Click="btnReset_Click"/>
     </Grid>
 </Window>
