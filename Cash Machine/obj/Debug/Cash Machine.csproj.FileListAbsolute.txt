@@ -1,0 +1,14 @@
+D:\Cash Machine\Cash Machine\bin\Debug\Cash Machine.exe.config
+D:\Cash Machine\Cash Machine\bin\Debug\Cash Machine.exe
+D:\Cash Machine\Cash Machine\bin\Debug\Cash Machine.pdb
+D:\Cash Machine\Cash Machine\obj\Debug\Cash Machine.csprojResolveAssemblyReference.cache
+D:\Cash Machine\Cash Machine\obj\Debug\MainWindow.g.cs
+D:\Cash Machine\Cash Machine\obj\Debug\App.g.cs
+D:\Cash Machine\Cash Machine\obj\Debug\Cash Machine_MarkupCompile.cache
+D:\Cash Machine\Cash Machine\obj\Debug\Cash Machine_MarkupCompile.lref
+D:\Cash Machine\Cash Machine\obj\Debug\MainWindow.baml
+D:\Cash Machine\Cash Machine\obj\Debug\Cash Machine.g.resources
+D:\Cash Machine\Cash Machine\obj\Debug\Cash_Machine.Properties.Resources.resources
+D:\Cash Machine\Cash Machine\obj\Debug\Cash Machine.csproj.GenerateResource.Cache
+D:\Cash Machine\Cash Machine\obj\Debug\Cash Machine.exe
+D:\Cash Machine\Cash Machine\obj\Debug\Cash Machine.pdb
